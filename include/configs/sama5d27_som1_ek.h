@@ -47,6 +47,11 @@
 #endif
 
 #ifdef CONFIG_QSPI_BOOT
+/* u-boot env in qspi flash */
+#undef CONFIG_ENV_SIZE
+#define CONFIG_ENV_SIZE		0x10000
+#undef CONFIG_ENV_OFFSET
+#define CONFIG_ENV_OFFSET	0x10000
 #undef CONFIG_BOOTARGS
 #define CONFIG_BOOTARGS \
 	"console=ttyS0,115200 earlyprintk root=/dev/mmcblk0p2 rw rootwait"
