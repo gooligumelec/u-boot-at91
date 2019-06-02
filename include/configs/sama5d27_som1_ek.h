@@ -54,7 +54,7 @@
 #define CONFIG_ENV_OFFSET	0x10000
 #undef CONFIG_BOOTARGS
 #define CONFIG_BOOTARGS \
-	"console=ttyS0,115200 earlyprintk root=/dev/mmcblk0p2 rw rootwait"
+	"console=ttyS0,115200 root=/dev/mmcblk0p2 rw rootfstype=ext4 rootwait atmel.pm_modes=standby,ulp1"
 #endif
 
 /* SPL */
