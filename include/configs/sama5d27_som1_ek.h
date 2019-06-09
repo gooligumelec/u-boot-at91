@@ -54,7 +54,7 @@
 #define CONFIG_ENV_OFFSET	0x10000
 #undef CONFIG_BOOTARGS
 #define CONFIG_BOOTARGS \
-	"console=ttyS0,115200 root=/dev/mmcblk0p2 rw rootfstype=ext4 rootwait atmel.pm_modes=standby,ulp1"
+	"console=ttyS0,115200 root=/dev/mmcblk1p2 rw rootfstype=ext4 rootwait atmel.pm_modes=standby,ulp1"
 #define CONFIG_BOOTCOMMAND      "sf probe 0; sf read 0x24000000 0xc0000 0x400000;"  \
                         "bootm 0x24000000#kernel_dtb"
 #endif
